@@ -1,0 +1,19 @@
+\section{Future Works}
+
+% Add a few words about the fact that the workshop is the first step of this project
+% Pursue technical exploration
+
+In the future, we would like to explore various models. In particular, we would like to focus on smaller models, to understand how model size affects efficiency. We expect that, due to their size, smaller models may struggle to generate explanations based on the knowledge graph, but may be sufficient for rephrasing the template-based explanations. This is particularly relevant considering the substantial computational requirements of larger LLMs. Furthermore, fine-tuning could be explored, as well as advanced prompting techniques like chain-of-thought~\cite{weichain} and self-consistency~\cite{wang2022self} (which may appeal to users wanting more detailed reasoning). Another interesting approach might be to specify the explanation generation task by memetic proxy~\cite{reynolds2021prompt}, i.e., to use the model's ability to draw on cultural references, metaphors, analogies, role-playing, and so on. %\footnote{Sometimes colloquially called "roleplay prompting"}
+% For example, we could encourage the model to present the explanation as if it came from a close friend, which might be more appreciated by some people.
+
+% A first direction is to pursue technical exploration by varying the LLMs used. In particular, we would like to investigate smaller models to see how smaller size impacts performance. This is particularly relevant in view of the high computing power requirements of the largest LLMs. In this context, fine-tuning could also be envisaged. We would also like to try more complex strategies like \textit{In-context learning} and \textit{Chain-of-thought} to design prompts. % TODO Martin
+% Finally, investigate other families of recommendation methods than graph-based is also at the agenda.
+
+% about LLMs
+% Distilled LLMs reduce memory and computational requirements while preserving or even outperforming larger models for certain tasks. These lighter models mimic the behaviour of larger language models by being fine-tuned to datasets that the latter generate~\cite{hsieh2023distilling}. Notable examples of distilled models include Alpaca~\cite{taori2023alpaca}, Vicuna~\cite{chiang2023vicuna}, and WizardLM~\cite{xu2023wizardlm}.
+
+% Evaluation -> More complete Picture (TO REFACTOR)
+Finally, instead of only relying on user-based evaluations, we aim to use mixed-methods evaluation to draw a complete picture of LLM's explanation generation capabilities for recommendations. This evaluation would combine heuristics-based methods (based on classical metrics for text quality like BLEU~\cite{papineni2002bleu} and ROUGE~\cite{lin2004rouge} scores), explanation quality metrics (e.g., \cite{Li2023PersonalizedPromptLearningExplainableRecommendation}), and user-based methods. Such user-based methods could include qualitative (e.g., interviews) and quantitative (e.g., online survey) methods to assess explanations w.r.t. different explanatory goals and subjective properties~\cite{Tintarev2015}.  
+
+% Other directions
+% Finally, other possible directions are the exploration of interactive recommendation scenarios (i.e., where the user could interact with the recommender system), formats tailored to individual preferences (e.g., bullet points versus detailed explanations), and other application domains (e.g., music or paper recommendation).
