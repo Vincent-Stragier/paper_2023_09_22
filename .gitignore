@@ -1,0 +1,8 @@
+build/main.aux
+tstex_modules/_api.ts
+build/main.fdb_latexmk
+build/main.bbl
+build/main.blg
+build/main.fls
+build/main.log
+main.synctex.gz
